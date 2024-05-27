@@ -157,3 +157,4 @@ guestList.pop();
 // Print the final guest list (should be empty)
 console.log("\nFinal Guest List:");
 console.log(guestList);
+
