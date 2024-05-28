@@ -60,3 +60,66 @@ let favoriteNumber: number = 7;
 console.log(`My Favourite Number is ${favoriteNumber}`)
 
 //-------------------------🚀 Day 4 Challenge: Start Coding! 🚀--------------------------------------------------
+//Question 1: Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If the programs are straightforward at this point, just add your name and the current date at the top of each program file. Then, write one sentence describing what the program does.
+
+//Question 2: Names: Store the names of a few of your friends in an array called names. Print each person’s name by accessing each element in the list, one at a time.
+let names : string[] = ["Haseeb", "Kamil" , "Saad", "Umer" , "Abdullah"]
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+//Question 3: Greetings: Use the array from Exercise 11. Instead of just printing each person’s name, print a message to them. The message should be the same for each person, but personalized with their name.
+for (let i = 0; i < names.length; i++){
+    console.log(`Assalam u alikum ${names[i]}, I hope you are doing Good`)
+}
+
+//-------------------------🚀 Day 5 Challenge: Start Coding! 🚀--------------------------------------------------
+//Question 1: Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+let transportation: string[] = ["Suzuki 110CC", "Honda BRV", "Toyota ROCCO"]
+
+for (let i = 0; i < transportation.length; i++ ) {
+    console.log(`Its my wish to own a ${transportation[i]}`)
+}
+
+//Question 2: Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+let guest: string[] = ["Abdullah", "Hashim", "Kamran"]
+
+// for (let i = 0; i < guest.length; i++){
+//     console.log(`Assalam u alikum Mr. ${guest[i]} you along with you complete family are invited for a dinner at my home.`)
+// }
+
+//Question 3: Changing Guest List: One of your guests can't make it to the dinner, so you need to send out a new set of invitations with a replacement guest.
+guest[guest.indexOf("Hashim")] = "Kamil";
+console.log("New Guest List")
+
+for (let i = 0; i < guest.length; i++){
+    console.log(`Assalam u alikum Mr. ${guest[i]} you along with you complete family are invited for a dinner at my home.`)
+}
+
+//-------------------------🚀 Day 6 Challenge: Start Coding! 🚀--------------------------------------------------
+//Question 1: More Guests: You've found a bigger dinner table, so there's room for more guests.
+guest.push("Babar", "Imam", "Shadab")
+
+console.log("Updated set of Invitation")
+guest.forEach(guest=>{
+    console.log(`Dear ${guest}, you are invited to dinner.`)
+})
+
+//Question 2: Shrinking Guest List: Unfortunately, your new table won’t arrive in time, and you can only invite two guests.
+while (guest.length > 2) {
+    let removedguest = guest.pop();
+    console.log(`Sorry, ${removedguest}, we can't invite you to dinner.`);
+}
+
+console.log("You are still Invited")
+guest.forEach(guest=>{
+    console.log(`${guest} You are invited`)
+})
+
+//Question 3: Seeing the World: Think of at least five places you’d like to visit.
+let want2visit: string[] = ["Saudia Arabia", "USA", "United Kingdom", "Australia", "Singapore", "Switzerland"]
+for (let i = 0; i < want2visit.length; i++){
+    console.log(`I would love to visit ${want2visit[i]} for Multiple Times`)
+}
+
+//-------------------------🚀 Day 7 Challenge: Start Coding! 🚀--------------------------------------------------
