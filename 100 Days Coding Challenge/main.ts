@@ -123,3 +123,56 @@ for (let i = 0; i < want2visit.length; i++){
 }
 
 //-------------------------🚀 Day 7 Challenge: Start Coding! 🚀--------------------------------------------------
+//Question No 1: Dinner Guests: Use one of your programs from Exercises 14 through 18 to print a message indicating the number of people you are inviting to dinner.
+console.log(`I going to visit ${want2visit.length} places this Year`)
+console.log(`I am going to invite ${guest.length} Guests at Dinner Tonight`)
+
+//Question 2: Think of something you could store in an array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+let languages: string[] = ["English", "German", "Arabic"]
+for (let i = 0; i < languages.length; i++){
+    console.log(`I would love to learn ${languages[i]}`)
+}
+
+//Question 3: Think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+interface Book {
+    title: string
+    writer: string
+    publishyear: number
+    genre: string 
+}
+
+let myFavoriteBook: Book = {
+    title: "Rich Dad Poor Dad",
+    writer: "Robert Kiyosaki, Sharon Lechter",
+    publishyear: 1997,
+    genre: "Personal finance, Non-fiction"
+}
+
+console.log("Book Details")
+console.log(`Titile: ${myFavoriteBook.title}`)
+console.log(`Writer:${myFavoriteBook.writer}`)
+console.log(`Publish Year:${myFavoriteBook.publishyear}`)
+console.log(`Genre:${myFavoriteBook.genre}`)
+
+//-------------------------🚀 Day 8 Challenge: Start Coding! 🚀--------------------------------------------------
+//Question 1: Intentional Error: Try to produce an array index error in one of your programs. Correct the error before finishing.
+// Creating an array of fruits
+let fruits: string[] = ["Apple", "Banana", "Cherry"];
+
+// Correctly checking the index
+let index = 3;
+if (index < fruits.length) {
+    console.log(fruits[index]);
+} else {
+    console.log(`Index ${index} is out of bounds.`);
+}
+
+// Accessing a valid index
+index = 2;
+if (index < fruits.length) {
+    console.log(fruits[index]); // Output: Cherry
+}
+
+//Question 23: Conditional Tests: Write a series of conditional tests. Predict the results of each test.
+
+

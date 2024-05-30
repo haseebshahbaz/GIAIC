@@ -96,3 +96,40 @@ var want2visit = ["Saudia Arabia", "USA", "United Kingdom", "Australia", "Singap
 for (var i = 0; i < want2visit.length; i++) {
     console.log("I would love to visit ".concat(want2visit[i], " for Multiple Times"));
 }
+//-------------------------🚀 Day 7 Challenge: Start Coding! 🚀--------------------------------------------------
+//Question No 1: Dinner Guests: Use one of your programs from Exercises 14 through 18 to print a message indicating the number of people you are inviting to dinner.
+console.log("I going to visit ".concat(want2visit.length, " places this Year"));
+console.log("I am going to invite ".concat(guest.length, " Guests at Dinner Tonight"));
+//Question 2: Think of something you could store in an array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+var languages = ["English", "German", "Arabic"];
+for (var i = 0; i < languages.length; i++) {
+    console.log("I would love to learn ".concat(languages[i]));
+}
+var myFavoriteBook = {
+    title: "Rich Dad Poor Dad",
+    writer: "Robert Kiyosaki, Sharon Lechter",
+    publishyear: 1997,
+    genre: "Personal finance, Non-fiction"
+};
+console.log("Book Details");
+console.log("Titile: ".concat(myFavoriteBook.title));
+console.log("Writer:".concat(myFavoriteBook.writer));
+console.log("Publish Year:".concat(myFavoriteBook.publishyear));
+console.log("Genre:".concat(myFavoriteBook.genre));
+//-------------------------🚀 Day 8 Challenge: Start Coding! 🚀--------------------------------------------------
+//Question 1: Intentional Error: Try to produce an array index error in one of your programs. Correct the error before finishing.
+// Creating an array of fruits
+var fruits = ["Apple", "Banana", "Cherry"];
+// Correctly checking the index
+var index = 3;
+if (index < fruits.length) {
+    console.log(fruits[index]);
+}
+else {
+    console.log("Index ".concat(index, " is out of bounds."));
+}
+// Accessing a valid index
+index = 2;
+if (index < fruits.length) {
+    console.log(fruits[index]); // Output: Cherry
+}
