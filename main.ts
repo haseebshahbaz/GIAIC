@@ -158,3 +158,60 @@ guestList.pop();
 console.log("\nFinal Guest List:");
 console.log(guestList);
 
+//Question # 18
+let places: string[] = ["Saudia Arabia", "India" , "Taiwan", "Ukraine" ]
+
+//Print your array in its original order
+console.log("Original Order", places)
+
+//Print your array in alphabetical order without modifying the actual list.
+let sortedPlaces = [...places].sort();
+console.log("Alphabetical Order", sortedPlaces)
+
+//Show that your array is still in its original order by printing it.
+console.log("Still in Original Order", places)
+
+//Print your array in reverse alphabetical order without changing the order of the original list.
+let reverseSortedPlaces = [...places].sort().reverse();
+console.log("Reverse Alphabetical Order", reverseSortedPlaces)
+
+//Show that your array is still in its original order by printing it.
+console.log("Still in Original Order", places)
+
+//Reverse the order of your list. Print the array to show that its order has changed
+places.reverse();
+console.log("Reversed Order", places)
+
+//Reverse the order of your list again. Print the list to show it’s back to its original order
+places.reverse();
+console.log("Original Order Restored", places)
+
+//Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed
+places.sort();
+console.log("Alphabetical order Restored", places)
+
+//Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed
+places.sort().reverse();
+console.log("Reverse Alphabetical order Restored", places)
+
+//Question No 19: 
+console.log(guestList.length, "Are Invited for the Dinner")
+
+//Question NO 20:
+let languages: string[] = ["German", "Arabic", "English"]
+console.log("List of language which i want to Learn", languages)
+
+//Question no 21: 
+let Country = {
+    Name: "Pakistan",
+    Currency: "PKR",
+    primeMinister: "Shahbaz SHarif",
+    President: "Asif Ali Zardari"
+}
+console.log("Mulim Country", Country)
+
+// Question no 22:
+let programmingLanguae: string[] = ["Typescript", "Javascript", "Python", "C++"]
+console.log("List of programming languages:", programmingLanguae);
+console.log("Accessing out-of-bounds index:", programmingLanguae[1]); // This will cause an error
+
